@@ -27,6 +27,11 @@ library
   exposed-modules:
       Build.Hash
       Lib
+      Smart.Element.Base
+      Smart.IO.Base
+      Smart.Memory.Base
+      Smart.Proc.Run
+      Smart.Proc.Simple.Hash
   other-modules:
       Paths_smart_graph
   hs-source-dirs:
@@ -34,6 +39,13 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , containers
+    , fgl
+    , hashable
+    , mtl
+    , stm
+    , unordered-containers
+    , vector
   default-language: Haskell2010
 
 executable smart-graph-exe
@@ -45,7 +57,14 @@ executable smart-graph-exe
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , containers
+    , fgl
+    , hashable
+    , mtl
     , smart-graph
+    , stm
+    , unordered-containers
+    , vector
   default-language: Haskell2010
 
 test-suite smart-graph-test
@@ -58,5 +77,12 @@ test-suite smart-graph-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , containers
+    , fgl
+    , hashable
+    , mtl
     , smart-graph
+    , stm
+    , unordered-containers
+    , vector
   default-language: Haskell2010
