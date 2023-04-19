@@ -28,6 +28,7 @@ dependencies:
 - vector
 - stm
 - containers
+- aeson
 
 ghc-options:
 - -Wall
