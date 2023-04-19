@@ -25,13 +25,7 @@ source-repository head
 
 library
   exposed-modules:
-      Build.Hash
-      Lib
-      Smart.Element.Base
-      Smart.IO.Base
-      Smart.Memory.Base
-      Smart.Proc.Run
-      Smart.Proc.Simple.Hash
+      Graph.Memory
   other-modules:
       Paths_smart_graph
   hs-source-dirs:
